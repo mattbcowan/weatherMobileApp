@@ -1,0 +1,41 @@
+{
+    "phrases": [
+        [
+            {"header1": "Global ","emphasis": "warming ","header2": "my ass.","footer": "Global warming what? It's freezing!","icon": "sun"},
+            {"header1": "Negative ","emphasis": "fucking ","header2": "zero.","footer": "It's fucking freezing right now, look outside!","icon": "sun"}
+        ],
+        [
+            {"header1": "Hey girl are you cold?","emphasis": "","header2": "","footer": "Because it's freezing outside. Go & look.","icon": "sun"},
+            {"header1": "It's ","emphasis": "ducking ","header2": "freezing.","footer": "Oh damnit you fucking autocorrect!","icon": "sun"}
+        ],
+        [
+            {"header1": "Meh... Just stay ","emphasis": "in bed.","header2": "","footer": "You can browse Tumblr & play Angrybirds.","icon": "sun"},
+            {"header1": "It's a ","emphasis": "\nleft shark ","header2": "kinda day.","footer": "Even Katy Perry can't save this anymore...","icon": "sun"}
+        ],
+        [
+            {"header1": "Fucking ","emphasis": "Amaze Balls.","header2": " ","footer": "So fucking nice outside, holy schmoly.","icon": "sun"},
+            {"header1": "It's ","emphasis": "ducking ","header2": "freezing.","footer": "Oh damnit you fucking autocorrect!","icon": "sun"}
+        ],
+        [
+            {"header1": "It's like a fucking ","emphasis": "oven.","header2": "","footer": "Just get naked, now - And get some ice cream.","icon": "sun"},
+            {"header1": "Like a ","emphasis": "fucking ","header2": "sweat-box.","footer": "Take off your shirt and get wet.","icon": "sun"}
+        ],
+        [
+            {"header1": "Let's get fucking ","emphasis": "fried.","header2": "","footer": "Take off your shirt but keep on the panties.","icon": "sun"},
+            {"header1": "It's too ","emphasis": "damn ","header2": "hot.","footer": "Look outside for more information.","icon": "sun"}
+        ],
+        [
+            {"header1": "Get your fucking ","emphasis": "umbrella.","header2": "","footer": "Shitloads of rain is awaiting you.","icon": "cloud-rain"},
+            {"header1": "Meh... Just stay ","emphasis": "in bed.","header2": "","footer": "You can browse Tumblr & play Angrybirds.","icon": "cloud-rain"}
+        ],
+        [
+            {"header1": "Get your fucking ","emphasis": "umbrella.","header2": "","footer": "Shitloads of rain is awaiting you.","icon": "cloud-lightning"},
+            {"header1": "Meh... Just stay ","emphasis": "in bed.","header2": "","footer": "You can browse Tumblr & play Angrybirds.","icon": "cloud-lightning"}
+        ],
+        [
+            {"header1": "Get your fucking ","emphasis": "umbrella.","header2": "","footer": "Shitloads of rain is awaiting you.","icon": "align-center"},
+            {"header1": "Meh... Just stay ","emphasis": "in bed.","header2": "","footer": "You can browse Tumblr & play Angrybirds.","icon": "align-center"}
+        ]
+
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "freezing": {
+        "style1": {
+            "text": ,
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "Negative ",
+                "emphasis": "fucking ",
+                "header2": "zero.",
+                "footer": "It's fucking freezing right now, look outside!"
+            },
+            "icon": "moon"
+        }
+    },
+    "cold": {
+        "style1": {
+            "text": {
+                "header1": "Hey girl are you cold?",
+                "emphasis": "",
+                "header2": "my ass.",
+                "footer": "Because it's freezing outside. Go & look."
+            },
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "It's ",
+                "emphasis": "ducking ",
+                "header2": "freezing.",
+                "footer": "Oh damnit you fucking autocorrect!"
+            },
+            "icon": "moon"
+        }
+    },
+    "okay": {
+        "style1": {
+            "text": {
+                "header1": "Meh... Just stay",
+                "emphasis": "in bed.",
+                "header2": "",
+                "footer": "You can browse Tumblr & play Angrybirds."
+            },
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "It's a ",
+                "emphasis": "left shark ",
+                "header2": "kinda day.",
+                "footer": "Even Katy Perry can't save this anymore..."
+            },
+            "icon": "moon"
+        }
+    },
+    "perfect": {
+        "style1": {
+            "text": {
+                "header1": "Fucking ",
+                "emphasis": "Amaze Balls. ",
+                "header2": "",
+                "footer": "So fucking nice outside, holy schmoly."
+            },
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "It's ",
+                "emphasis": "ducking ",
+                "header2": "freezing.",
+                "footer": "Oh damnit you fucking autocorrect!"
+            },
+            "icon": "moon"
+        }
+    },
+    "hot": {
+        "style1": {
+            "text": {
+                "header1": "It's like a fucking ",
+                "emphasis": "oven.",
+                "header2": "",
+                "footer": "Just get naked, now - And get some ice cream."
+            },
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "Like a ",
+                "emphasis": "fucking ",
+                "header2": "sweat-box.",
+                "footer": "Take off your shirt and get wet."
+            },
+            "icon": "moon"
+        }
+    },
+    "too damn hot": {
+        "style1": {
+            "text": {
+                "header1": "Let's get fucking",
+                "emphasis": "fried.",
+                "header2": "",
+                "footer": "Take off your shirt but keep on the panties."
+            },
+            "icon": "moon"
+        },
+        "style2": {
+            "text": {
+                "header1": "It's too",
+                "emphasis": "damn ",
+                "header2": "hot.",
+                "footer": "Look outside for more information."
+            },
+            "icon": "moon"
+        }
+    }
+}
