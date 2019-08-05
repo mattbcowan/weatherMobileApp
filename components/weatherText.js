@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Platform } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { WEATHER_API_KEY } from 'react-native-dotenv';
+import Constants from 'expo-constants';
+import * as Location from 'expo-location';
+import * as Permissions from 'expo-permissions';
 
 const customData = require('./customData.json')
 
@@ -55,10 +58,37 @@ export default class WeatherText extends Component {
             temp_max: '',
             humidity: '',
             city: '',
-            style: ''
+            style: '',
+            location: null,
+            errorMessage: null
         }
-        this.getWeather('Brentwood')
     };
+
+    componentWillMount() {
+        if (Platform.OS === 'android' && !Constants.isDevice) {
+            this.setState({
+                errorMessage: "Won't work on Sketch in an Android Emulator"
+            });
+        } else {
+            this._getLocationAsync()
+            .then(() => {
+                this.getWeather(this.state.location[0].postalCode)
+            })
+        }
+    }
+
+    _getLocationAsync = async () => {
+        let { status } = await Permissions.askAsync(Permissions.LOCATION);
+        if (status !== 'granted') {
+            this.setState({
+                errorMessage: 'Permission to access location was denied'
+            });
+        }
+
+        let coords = await Location.getCurrentPositionAsync({});
+        let location = await Location.reverseGeocodeAsync({"latitude": coords.coords.latitude, "longitude": coords.coords.longitude})
+        this.setState({ location: location });
+    }
 
     getDisplayType(temp, icon) {
         var cd = customData.phrases
@@ -89,15 +119,17 @@ export default class WeatherText extends Component {
         return Math.floor(Math.random() * Math.floor(max));
     }
 
+    // Fix this logic. City isn't city anymore it's found by postal code
     getWeather(city) {
         const apiKey = WEATHER_API_KEY;
         var city = city;
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+        var location = this.state.location[0];
+        let url = `http://api.openweathermap.org/data/2.5/weather?zip=${location.postalCode},${location.isoCountryCode}&appid=${apiKey}&units=imperial`
       
         return fetch(url)
           .then(response => response.json())
           .then(weather => {
-              console.log(weather)
+            //   console.log(weather)
               var tempNow = Math.round(weather.main.temp)
             this.setState({ 
                 temp_now: tempNow,
